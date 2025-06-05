@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import { Mail, Globe, Github } from 'lucide-react';
 import AnimatedSection from '../../components/AnimatedSection';
