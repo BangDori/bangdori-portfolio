@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Mail, Globe, Github } from 'lucide-react';
-import { motion } from 'framer-motion';
+import AnimatedSection from '../../components/AnimatedSection';
 
 const profileLinks = [
   {
@@ -29,12 +29,10 @@ const profileLinks = [
 
 export default function ProfileCard() {
   return (
-    <div className="flex flex-col items-center gap-8 md:flex-row md:items-start">
+    <div className="flex flex-col items-center gap-2 md:flex-row md:items-start md:gap-8">
       {/* Profile Image */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
+      <AnimatedSection
+        as="div"
         className="h-48 w-48 flex-shrink-0 overflow-hidden rounded-2xl shadow-md"
       >
         <Image
@@ -45,20 +43,19 @@ export default function ProfileCard() {
           className="h-full w-full object-cover"
           priority
         />
-      </motion.div>
+      </AnimatedSection>
 
       {/* Profile Info */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-        className="flex h-48 flex-col justify-between gap-2 py-2"
+      <AnimatedSection
+        as="div"
+        className="flex h-auto flex-col justify-between gap-2 py-2 md:h-48"
+        delay={0.2}
       >
         <div className="flex flex-col gap-1">
-          <h1 className="text-2xl font-bold text-gray-900 md:text-3xl">강병준</h1>
-          <p className="text-base text-gray-600">프론트엔드 개발자</p>
+          <h1 className="text-2xl font-bold text-gray-900 md:text-4xl">강병준</h1>
+          <p className="text-base text-gray-600">Frontend Developer</p>
         </div>
-        <div className="mt-2 flex flex-col gap-2 text-sm text-gray-600">
+        <div className="mt-2 flex flex-col gap-2 text-sm text-gray-600 md:text-base">
           {profileLinks.map(({ icon: Icon, label, href, text }) => (
             <div key={label} className="flex items-center gap-2">
               <Icon size={20} />
@@ -68,7 +65,7 @@ export default function ProfileCard() {
             </div>
           ))}
         </div>
-      </motion.div>
+      </AnimatedSection>
     </div>
   );
 }
