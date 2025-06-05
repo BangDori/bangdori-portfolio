@@ -29,11 +29,11 @@ const profileLinks = [
 
 export default function ProfileCard() {
   return (
-    <div className="flex flex-col items-center gap-2 md:flex-row md:items-start md:gap-8">
+    <div className="flex w-full flex-col gap-2 md:flex-row md:items-start md:gap-8">
       {/* Profile Image */}
       <AnimatedSection
         as="div"
-        className="h-48 w-48 flex-shrink-0 overflow-hidden rounded-2xl shadow-md"
+        className="h-64 w-full max-w-xs flex-shrink-0 overflow-hidden rounded-2xl shadow-md md:h-48 md:w-48"
       >
         <Image
           src="/profile.jpeg"
@@ -48,7 +48,7 @@ export default function ProfileCard() {
       {/* Profile Info */}
       <AnimatedSection
         as="div"
-        className="flex h-auto flex-col justify-between gap-2 py-2 md:h-48"
+        className="flex w-full flex-col justify-between gap-2 py-2 md:h-48"
         delay={0.2}
       >
         <div className="flex flex-col gap-1">
