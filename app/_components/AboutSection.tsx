@@ -2,7 +2,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 
 export default function AboutSection() {
   return (
-    <AnimatedSection as="section" className="mt-4 md:mt-8" delay={0.5}>
+    <AnimatedSection as="section" className="mt-8" delay={0.5}>
       <p className="text-center text-sm leading-relaxed font-medium md:text-left md:text-base">
         일상 속에 스며들 수 있는, 누구나 사용할 수 있는 좋은 제품을 만들고 싶습니다.
         <br />
