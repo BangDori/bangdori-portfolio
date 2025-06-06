@@ -3,7 +3,6 @@ import { ProjectDetail } from '@/types/project';
 import Image from 'next/image';
 import ProjectDetailSectionBlock from './ProjectDetailSectionBlock';
 import clsx from 'clsx';
-import { Check, Dot } from 'lucide-react';
 
 export default function ProjectDetailCard({
   title,
@@ -45,37 +44,27 @@ export default function ProjectDetailCard({
             <p className="text-sm text-gray-700 md:text-base">{cause}</p>
           </ProjectDetailSectionBlock>
           <ProjectDetailSectionBlock title="대안">
-            {/* <ul className="ml-4 list-inside list-disc text-sm text-gray-700 md:text-base">
+            <ul className="dot-list">
               {alternatives.map((alt, i) => (
                 <li key={i} className={clsx(alt.selected && 'font-semibold text-green-600')}>
-                  {alt.text}
-                </li>
-              ))}
-            </ul> */}
-            <ul className="ml-4 list-none text-sm text-gray-700 md:text-base">
-              {alternatives.map((alt, i) => (
-                <li
-                  key={i}
-                  className={clsx(
-                    'flex items-center gap-2',
-                    alt.selected && 'font-semibold text-green-600'
-                  )}
-                >
-                  {alt.selected ? (
-                    <Check size={16} className="flex-shrink-0 text-green-600" />
-                  ) : (
-                    <Dot size={16} className="text-black" />
-                  )}
                   {alt.text}
                 </li>
               ))}
             </ul>
           </ProjectDetailSectionBlock>
           <ProjectDetailSectionBlock title="해결">
-            <p className="text-sm text-gray-700 md:text-base">{solution}</p>
+            <ul className="dot-list">
+              {solution.map((sol, i) => (
+                <li key={i}>{sol}</li>
+              ))}
+            </ul>
           </ProjectDetailSectionBlock>
           <ProjectDetailSectionBlock title="고찰">
-            <p className="text-sm text-gray-700 md:text-base">{insights.join(' ')}</p>
+            <ul className="dot-list">
+              {insights.map((insight, i) => (
+                <li key={i}>{insight}</li>
+              ))}
+            </ul>
           </ProjectDetailSectionBlock>
         </div>
       </CardContent>
