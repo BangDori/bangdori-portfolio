@@ -1,16 +1,27 @@
 import { IconType } from 'react-icons';
 
-export interface ProjectDetailCard {
-  title: string;
-  image: string;
-  problem: string;
-  cause: string;
-  solution: string;
-  insight: string;
-}
-
 export interface ProjectDetailLink {
   icon: IconType;
   label: string;
   href: string;
+}
+
+export interface ProjectDetail {
+  title: string;
+  images: Image[];
+  problem: string;
+  cause: string;
+  alternatives: Alternative[];
+  solution: string;
+  insights: string[];
+}
+
+interface Image {
+  src: string;
+  caption: string;
+}
+
+interface Alternative {
+  text: string;
+  selected: boolean;
 }

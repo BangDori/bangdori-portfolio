@@ -4,9 +4,9 @@ import ProjectDetailList from '@/components/ProjectDetailList';
 import ProjectOverView from '@/components/ProjectOverView';
 import { projects } from '@/constants/project';
 import ProjectLink from './_components/ProjectLink';
+import appDetail from '@/constants/app';
 
 const projectMeta = projects.app;
-const projectDetails = projectMeta.detail;
 
 export default function SponjyApp() {
   return (
@@ -27,7 +27,7 @@ export default function SponjyApp() {
         <ProjectOverView {...projectMeta} />
       </AnimatedSection>
       <AnimatedSection as="section" delay={0.4} className="mb-8 rounded-lg">
-        <ProjectDetailList details={projectDetails} />
+        <ProjectDetailList details={appDetail} />
       </AnimatedSection>
     </main>
   );
