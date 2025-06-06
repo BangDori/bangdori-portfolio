@@ -2,7 +2,6 @@ import AnimatedSection from '@/components/AnimatedSection';
 import ProjectDetailHeader from '@/components/ProjectDetailHeader';
 import ProjectOverView from '@/components/ProjectOverView';
 import { projects } from '@/constants/project';
-import { Smartphone } from 'lucide-react';
 
 const projectMeta = projects.app;
 
@@ -12,7 +11,7 @@ export default function SponjyApp() {
       <div className="mb-4">
         <AnimatedSection as="div" delay={0} className="space-y-2">
           <ProjectDetailHeader
-            Icon={Smartphone}
+            Icon={projectMeta.Icon}
             title={projectMeta.title}
             date={projectMeta.date}
           />
