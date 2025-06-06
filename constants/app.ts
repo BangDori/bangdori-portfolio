@@ -1,6 +1,6 @@
 const appDetail = [
   {
-    title: '인증 토큰 갱신 병목 해결로 서버 부하 감소',
+    title: '토큰 재발급 병목 해소를 통한 인증 안정성 강화',
     images: [
       {
         src: '/images/token-refresh-before-after.png',
@@ -28,8 +28,17 @@ const appDetail = [
     ],
   },
   {
-    title: '스플래시 화면에서 인증 오류 발생 시 자동 로그아웃 문제 개선',
-    images: [],
+    title: '네트워크 장애 상황에서의 인증 흐름 개선 및 사용자 경험 향상',
+    images: [
+      {
+        src: '/app/splash-error-before.png',
+        caption: '[Before 스플래시 화면 흐름]',
+      },
+      {
+        src: '/app/splash-error-after.png',
+        caption: '[After 스플래시 화면 흐름]',
+      },
+    ],
     problem: '스플래시 화면에서 인증 오류 발생 시 사용자가 자동으로 로그아웃되는 현상이 발생함',
     cause:
       '클라이언트의 네트워크 장애나 서버 오류 상황에 대한 정교한 에러 핸들링이 부족하여, 일시적인 문제에도 토큰이 제거되어 로그아웃 처리됨',
