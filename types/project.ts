@@ -12,7 +12,7 @@ export interface ProjectDetail {
   problem: string;
   cause: string;
   alternatives: Alternative[];
-  solution: string;
+  solution: string[];
   insights: string[];
 }
 
