@@ -16,7 +16,7 @@ export interface ProjectDetail {
   insights: string[];
 }
 
-interface Image {
+export interface Image {
   src: string;
   caption: string;
 }
