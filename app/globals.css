@@ -120,3 +120,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.dot-list {
+  @apply ml-4 list-outside list-disc pl-5 text-sm text-gray-700 md:text-base;
+}
