@@ -10,7 +10,9 @@ export default function ProjectsSummarySection() {
       <h2 className="mb-6 text-2xl font-bold">주요 프로젝트</h2>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projectList.map((project, index) => (
-          <ProjectCard key={project.title} order={index} {...project} />
+          <AnimatedSection key={project.title} as="div" delay={0.5 + 0.1 * index}>
+            <ProjectCard {...project} />
+          </AnimatedSection>
         ))}
       </div>
     </AnimatedSection>
