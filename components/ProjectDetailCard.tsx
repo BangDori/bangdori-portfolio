@@ -12,6 +12,7 @@ export default function ProjectDetailCard({
   alternatives,
   solution,
   insights,
+  references,
 }: ProjectDetail) {
   return (
     <Card>
@@ -48,6 +49,24 @@ export default function ProjectDetailCard({
               ))}
             </ul>
           </ProjectDetailSectionBlock>
+          {references && (
+            <ProjectDetailSectionBlock title="참고 자료">
+              <ul className="dot-list">
+                {references.map((link, i) => (
+                  <li key={i}>
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-500 hover:underline"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </ProjectDetailSectionBlock>
+          )}
         </div>
       </CardContent>
     </Card>

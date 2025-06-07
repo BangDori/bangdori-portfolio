@@ -14,6 +14,7 @@ export interface ProjectDetail {
   alternatives: Alternative[];
   solution: string[];
   insights: string[];
+  references: Reference[];
 }
 
 export interface Image {
@@ -24,4 +25,9 @@ export interface Image {
 interface Alternative {
   text: string;
   selected: boolean;
+}
+
+interface Reference {
+  label: string;
+  href: string;
 }
