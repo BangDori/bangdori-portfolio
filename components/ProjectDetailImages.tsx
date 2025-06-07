@@ -39,7 +39,7 @@ export default function ProjectDetailImages({ images }: { images: ImageType[] })
                 alt={img.caption || '프로젝트 이미지'}
                 width={1200}
                 height={600}
-                className="h-auto w-full rounded object-contain"
+                className="h-auto max-h-[80vh] w-full rounded object-contain"
               />
             </DialogContent>
           </Dialog>

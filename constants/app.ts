@@ -2,11 +2,8 @@ const appDetail = [
   {
     title: '토큰 재발급 병목 해소를 통한 인증 안정성 강화',
     images: [
-      {
-        src: '/images/token-refresh-before-after.png',
-        caption: '[Before 토큰 재발급 흐름]',
-      },
-      { src: '/images/token-refresh-flow.png', caption: '[After 토큰 재발급 흐름]' },
+      { src: '/app/token-refresh-before.png', caption: '[Before 토큰 재발급 흐름]' },
+      { src: '/app/token-refresh-after.png', caption: '[After 토큰 재발급 흐름]' },
     ],
     problem:
       '토큰 만료 시, 요청 중인 여러 API 요청이 동시에 실패(401)하면서 로그아웃 문제가 발생함',
@@ -77,6 +74,10 @@ const appDetail = [
         src: '/app/deeplink-flow.png',
         caption: '[로그인 상태별 딥링크 흐름]',
       },
+      {
+        src: '/app/deeplink-demo.gif',
+        caption: '[딥링크 클릭 시 로그인되지 않은 사용자의 화면 이동]',
+      },
     ],
     problem: '딥링크 클릭 시 로그인 상태에 따라 올바른 화면으로 이동하지 못하는 문제가 발생함',
     cause:
@@ -97,7 +98,12 @@ const appDetail = [
   },
   {
     title: '스토어 심사 지연 문제를 해결하기 위한 인앱 업데이트 프로세스 도입',
-    images: [],
+    images: [
+      {
+        src: '/app/inapp-update-process.png',
+        caption: '[인앱 업데이트 프로세스]',
+      },
+    ],
     problem:
       '앱 스토어 심사로 인해 배포 시점이 최대 1~2일 지연되어, 긴급 수정이 즉시 이루어지지 않음',
     cause:
@@ -138,8 +144,13 @@ const appDetail = [
     ],
   },
   {
-    title: '브랜치 전략 기반 배포 자동화 파이프라인 구축',
-    images: [],
+    title: 'CI/CD 자동화 파이프라인 구축을 통한 배포 효율성 개선',
+    images: [
+      {
+        src: '/app/ci-cd-pipeline.png',
+        caption: '[CI/CD 자동화 배포 파이프라인]',
+      },
+    ],
     problem:
       'Android와 iOS 앱을 각각 수동으로 빌드하고 업로드해야 해 배포 과정에 반복적인 수작업이 발생하고, 작업 효율성이 저하됨',
     cause:
