@@ -1,4 +1,4 @@
-import { ShieldUser, Smartphone, YoutubeIcon, Zap } from 'lucide-react';
+import { ShieldUser, Smartphone, YoutubeIcon } from 'lucide-react';
 import { FaAndroid, FaApple } from 'react-icons/fa';
 
 export const projects = {
@@ -38,12 +38,5 @@ export const projects = {
     techStack: ['TypeScript', 'Next.js', 'Tailwind CSS'],
     link: '/experience/admin-page',
     date: '2025.02 ~ 2025.03',
-  },
-  productivity: {
-    Icon: Zap,
-    title: '생산성 개선',
-    description: '인앱 업데이트, 배포 자동화 등 개발 생산성 및 배포 효율성 향상',
-    techStack: ['AWS S3', 'Fastlane', 'Firebase', 'Github Actions'],
-    link: '/experience/productivity',
   },
 };
