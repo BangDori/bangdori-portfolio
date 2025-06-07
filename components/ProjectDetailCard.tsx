@@ -49,7 +49,7 @@ export default function ProjectDetailCard({
               ))}
             </ul>
           </ProjectDetailSectionBlock>
-          {references && (
+          {references.length > 0 && (
             <ProjectDetailSectionBlock title="참고 자료">
               <ul className="dot-list">
                 {references.map((link, i) => (
