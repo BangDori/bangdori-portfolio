@@ -10,7 +10,7 @@ export interface ProjectDetail {
   title: string;
   images: Image[];
   problem: string;
-  cause: string;
+  cause: string[];
   alternatives: Alternative[];
   solution: string[];
   insights: string[];

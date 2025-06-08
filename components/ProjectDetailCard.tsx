@@ -21,10 +21,16 @@ export default function ProjectDetailCard({
         <ProjectDetailImages images={images} />
         <div className="flex flex-col gap-6">
           <ProjectDetailSectionBlock title="문제">
-            <p className="text-sm text-gray-700 md:text-base">{problem}</p>
+            <ul className="dot-list">
+              <li>{problem}</li>
+            </ul>
           </ProjectDetailSectionBlock>
           <ProjectDetailSectionBlock title="원인">
-            <p className="text-sm text-gray-700 md:text-base">{cause}</p>
+            <ul className="dot-list">
+              {cause.map((c, i) => (
+                <li key={i}>{c}</li>
+              ))}
+            </ul>
           </ProjectDetailSectionBlock>
           <ProjectDetailSectionBlock title="대안">
             <ul className="dot-list">
