@@ -4,6 +4,10 @@ import ProjectDetailSectionBlock from './ProjectDetailSectionBlock';
 import clsx from 'clsx';
 import ProjectDetailImages from './ProjectDetailImages';
 
+interface ProjectDetailCardProps extends ProjectDetail {
+  index: number;
+}
+
 export default function ProjectDetailCard({
   title,
   images,
@@ -13,9 +17,10 @@ export default function ProjectDetailCard({
   solution,
   insights,
   references,
-}: ProjectDetail) {
+  index,
+}: ProjectDetailCardProps) {
   return (
-    <Card>
+    <Card id={`detail-${index}`}>
       <CardContent>
         <h3 className="mb-4 text-lg font-bold md:text-xl">{title}</h3>
         <ProjectDetailImages images={images} />

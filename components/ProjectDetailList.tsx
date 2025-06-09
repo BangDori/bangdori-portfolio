@@ -11,7 +11,7 @@ export default function ProjectDetailList({ details }: { details: ProjectDetail[
         </div>
         <div className="space-y-8">
           {details.map((item, idx) => (
-            <ProjectDetailCard key={idx} {...item} />
+            <ProjectDetailCard key={idx} {...item} index={idx} />
           ))}
         </div>
       </CardContent>

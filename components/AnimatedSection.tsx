@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
 
-type MotionTag = 'div' | 'section';
+type MotionTag = 'div' | 'section' | 'aside';
 
 interface AnimatedSectionProps {
   as: MotionTag;
