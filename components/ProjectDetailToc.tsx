@@ -45,7 +45,7 @@ export default function ProjectDetailToc({ details }: ProjectDetailTocProps) {
               href={`#detail-${idx}`}
               className={clsx(
                 'flex items-center gap-2 text-sm hover:text-gray-600 hover:underline',
-                activeIdx === idx ? 'text-black hover:text-black' : 'text-gray-400'
+                activeIdx === idx ? 'text-black hover:text-black dark:text-white' : 'text-gray-400'
               )}
             >
               {idx + 1}. {item.title}

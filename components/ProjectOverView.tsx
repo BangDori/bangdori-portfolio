@@ -10,8 +10,10 @@ export default function ProjectOverView({ description, techStack }: ProjectOverV
     <Card className="mb-8 border-[1px] shadow-sm">
       <CardContent>
         <div className="mb-4">
-          <h2 className="mb-2 text-xl font-bold md:text-2xl">개요</h2>
-          <p className="text-sm leading-relaxed text-gray-600 md:text-base">{description}</p>
+          <h2 className="mb-2 text-xl font-bold md:text-2xl dark:text-gray-300">개요</h2>
+          <p className="text-sm leading-relaxed text-gray-600 md:text-base dark:text-gray-300">
+            {description}
+          </p>
         </div>
         <div className="flex flex-wrap gap-2">
           {techStack.map((tech) => (

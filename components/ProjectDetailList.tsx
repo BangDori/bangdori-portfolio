@@ -7,7 +7,7 @@ export default function ProjectDetailList({ details }: { details: ProjectDetail[
     <Card className="mb-8 border-[1px] shadow-sm">
       <CardContent>
         <div className="mb-4">
-          <h2 className="mb-2 text-xl font-bold md:text-2xl">개발 상세 내용</h2>
+          <h2 className="mb-2 text-xl font-bold md:text-2xl dark:text-gray-300">개발 상세 내용</h2>
         </div>
         <div className="space-y-8">
           {details.map((item, idx) => (

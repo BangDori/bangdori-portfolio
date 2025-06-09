@@ -50,10 +50,12 @@ export default function ProfileCard() {
         delay={0.2}
       >
         <div className="flex flex-col gap-1">
-          <h1 className="text-2xl font-bold text-gray-900 md:text-4xl">강병준</h1>
-          <p className="text-base text-gray-600">Frontend Developer</p>
+          <h1 className="text-2xl font-bold text-gray-900 md:text-4xl dark:text-gray-300">
+            강병준
+          </h1>
+          <p className="text-base text-gray-600 dark:text-gray-400">Frontend Developer</p>
         </div>
-        <div className="mt-2 flex flex-col gap-2 text-sm text-gray-600 md:text-base">
+        <div className="mt-2 flex flex-col gap-2 text-sm text-gray-600 md:text-base dark:text-gray-400">
           {profileLinks.map(({ icon: Icon, label, href, text }) => (
             <div key={label} className="flex items-center gap-2">
               <Icon size={20} />
