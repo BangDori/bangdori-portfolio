@@ -4,7 +4,7 @@ import { FaAndroid, FaApple } from 'react-icons/fa';
 export const projects = {
   app: {
     Icon: Smartphone,
-    title: '스폰지 앱',
+    title: '모바일 앱',
     description:
       '축구 · 풋살 소셜 매칭 플랫폼의 모바일 앱 개발 및 인증, 결제, 딥링크 등 핵심 기능 구현',
     techStack: ['TypeScript', 'React Native', 'Zustand', 'Tanstack Query', 'Jest'],
@@ -25,7 +25,7 @@ export const projects = {
   },
   webview: {
     Icon: YoutubeIcon,
-    title: '스폰지 웹뷰',
+    title: '모바일 웹뷰',
     description: 'three.js 기반의 360도 영상 플레이어 개발',
     techStack: ['TypeScript', 'Next.js', 'Three.js'],
     link: '/experience/sponjy-webview',
