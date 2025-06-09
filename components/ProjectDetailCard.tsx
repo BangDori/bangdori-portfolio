@@ -29,15 +29,20 @@ export default function ProjectDetailCard({
         <div className="flex flex-col gap-6">
           <ProjectDetailSectionBlock title="문제">
             <ul className="dot-list">
-              <li className="text-gray-700 dark:text-gray-300">{problem}</li>
+              <li
+                className="text-gray-700 dark:text-gray-300"
+                dangerouslySetInnerHTML={{ __html: problem }}
+              />
             </ul>
           </ProjectDetailSectionBlock>
           <ProjectDetailSectionBlock title="원인">
             <ul className="dot-list">
               {cause.map((c, i) => (
-                <li key={i} className="text-gray-700 dark:text-gray-300">
-                  {c}
-                </li>
+                <li
+                  key={i}
+                  className="text-gray-700 dark:text-gray-300"
+                  dangerouslySetInnerHTML={{ __html: c }}
+                />
               ))}
             </ul>
           </ProjectDetailSectionBlock>
@@ -59,18 +64,22 @@ export default function ProjectDetailCard({
           <ProjectDetailSectionBlock title="해결">
             <ul className="dot-list">
               {solution.map((sol, i) => (
-                <li key={i} className="text-gray-700 dark:text-gray-300">
-                  {sol}
-                </li>
+                <li
+                  key={i}
+                  className="text-gray-700 dark:text-gray-300"
+                  dangerouslySetInnerHTML={{ __html: sol }}
+                />
               ))}
             </ul>
           </ProjectDetailSectionBlock>
           <ProjectDetailSectionBlock title="결과">
             <ul className="dot-list">
               {insights.map((insight, i) => (
-                <li key={i} className="text-gray-700 dark:text-gray-300">
-                  {insight}
-                </li>
+                <li
+                  key={i}
+                  className="text-gray-700 dark:text-gray-300"
+                  dangerouslySetInnerHTML={{ __html: insight }}
+                />
               ))}
             </ul>
           </ProjectDetailSectionBlock>
