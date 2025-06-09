@@ -1,7 +1,7 @@
+import clsx from 'clsx';
 import { Card, CardContent } from '@/components/ui/card';
 import { ProjectDetail } from '@/types/project';
 import ProjectDetailSectionBlock from './ProjectDetailSectionBlock';
-import clsx from 'clsx';
 import ProjectDetailImages from './ProjectDetailImages';
 
 interface ProjectDetailCardProps extends ProjectDetail {
@@ -53,7 +53,7 @@ export default function ProjectDetailCard({
               ))}
             </ul>
           </ProjectDetailSectionBlock>
-          <ProjectDetailSectionBlock title="고찰">
+          <ProjectDetailSectionBlock title="결과">
             <ul className="dot-list">
               {insights.map((insight, i) => (
                 <li key={i}>{insight}</li>
