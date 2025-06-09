@@ -9,7 +9,7 @@ export default function ProjectDetailImages({ images }: { images: ImageType[] })
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <div className="mb-6 flex flex-col items-center gap-4">
+    <div className="mb-6 flex flex-col items-center gap-4 select-none">
       {images.map((img, idx) => (
         <div key={idx} className="flex w-full flex-col items-center">
           <button
@@ -32,7 +32,7 @@ export default function ProjectDetailImages({ images }: { images: ImageType[] })
           )}
           {/* Dialog(모달) */}
           <Dialog open={openIdx === idx} onOpenChange={() => setOpenIdx(null)}>
-            <DialogContent className="flex max-w-[80%] flex-col items-center md:max-w-3xl lg:max-w-[80%]">
+            <DialogContent className="flex max-w-[80%] flex-col items-center select-none md:max-w-3xl lg:max-w-[80%]">
               <DialogTitle>{img.caption}</DialogTitle>
               <Image
                 src={img.src}

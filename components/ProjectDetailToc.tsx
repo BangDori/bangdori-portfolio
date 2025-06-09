@@ -36,7 +36,7 @@ export default function ProjectDetailToc({ details }: ProjectDetailTocProps) {
   }, [details]);
 
   return (
-    <nav className="mb-6 md:mb-0">
+    <nav className="mb-6 select-none md:mb-0">
       <h3 className="mb-2 text-base font-semibold">목차</h3>
       <ul className="space-y-2 border-l-2 border-gray-200 pl-2">
         {details.map((item, idx) => (
