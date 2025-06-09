@@ -124,3 +124,7 @@
 .dot-list {
   @apply ml-4 list-outside list-disc pl-5 text-sm text-gray-700 md:text-base;
 }
+
+.project-detail-container {
+  @apply mx-auto w-full max-w-4xl p-8 md:max-w-6xl;
+}

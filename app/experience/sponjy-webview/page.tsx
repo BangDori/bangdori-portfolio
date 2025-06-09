@@ -10,7 +10,7 @@ const projectMeta = projects.webview;
 
 export default function SponjyWebView() {
   return (
-    <main className="mx-auto w-full max-w-4xl p-8 md:max-w-6xl">
+    <main className="project-detail-container">
       <div className="mb-4">
         <AnimatedSection as="div" delay={0} className="space-y-2">
           <ProjectDetailHeader

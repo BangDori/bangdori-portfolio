@@ -11,7 +11,7 @@ const projectMeta = projects.app;
 
 export default function SponjyApp() {
   return (
-    <main className="mx-auto w-full max-w-4xl p-8 md:max-w-6xl">
+    <main className="project-detail-container">
       <div className="relative mb-4">
         <AnimatedSection as="div" className="space-y-2">
           <ProjectDetailHeader
