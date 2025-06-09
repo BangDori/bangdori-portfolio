@@ -20,16 +20,12 @@ export default function SponjyApp() {
             date={projectMeta.date}
           />
         </AnimatedSection>
-        <AnimatedSection
-          as="div"
-          delay={0.1}
-          className="static mt-4 md:absolute md:top-0 md:right-0 md:mt-0"
-        >
-          <ProjectLink links={projectMeta.links} />
-        </AnimatedSection>
       </div>
       <div className="flex flex-col gap-8 md:flex-row">
         <div className="min-w-0 flex-1">
+          <AnimatedSection as="section" delay={0.1} className="mb-8 rounded-lg">
+            <ProjectLink links={projectMeta.links} />
+          </AnimatedSection>
           <AnimatedSection as="section" delay={0.2} className="mb-8 rounded-lg">
             <ProjectOverView {...projectMeta} />
           </AnimatedSection>
