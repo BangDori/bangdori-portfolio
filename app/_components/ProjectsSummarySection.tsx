@@ -9,7 +9,7 @@ const projectList = Object.values(projects);
 export default function ProjectsSummarySection() {
   return (
     <AnimatedSection as="section" className="mt-8" delay={0.5}>
-      <h2 className="text-foreground mb-6 text-2xl font-bold">프로젝트</h2>
+      <h2 className="text-foreground mb-6 text-2xl font-bold">경력</h2>
 
       <CompanyCard {...company}>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
