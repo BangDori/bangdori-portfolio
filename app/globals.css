@@ -128,3 +128,8 @@
 .project-detail-container {
   @apply mx-auto w-full max-w-4xl p-8 md:max-w-6xl;
 }
+
+b {
+  color: #1976d2;
+  font-weight: bold;
+}
