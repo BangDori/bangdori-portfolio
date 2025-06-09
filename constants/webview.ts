@@ -1,7 +1,16 @@
 const webviewDetail = [
   {
     title: '웹뷰 메시지 통신의 구조적 개선을 위한 옵저버 패턴 적용',
-    images: [],
+    images: [
+      {
+        src: '/webview/observer-pattern-before.png',
+        caption: '[옵저버 패턴 적용 전]',
+      },
+      {
+        src: '/webview/observer-pattern-after.png',
+        caption: '[옵저버 패턴 적용 후]',
+      },
+    ],
     problem:
       '웹뷰 메시지를 처리하는 로직이 여러 컴포넌트에 중복되고 분산되어 있어, 메시지 흐름을 예측하기 어렵고 유지보수 및 확장 시 에러 발생 가능성이 높음',
     cause: [
