@@ -21,7 +21,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Link href={link} className="block transition-transform hover:scale-[1.02]">
-      <Card className="h-full overflow-hidden border border-transparent py-4 transition-colors focus-within:border-[#3182f6] hover:border-[#3182f6] md:h-[200px]">
+      <Card className="h-full overflow-hidden border py-4 transition-colors focus-within:border-[#3182f6] hover:border-[#3182f6] md:h-[200px]">
         <CardContent>
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-center gap-2">
