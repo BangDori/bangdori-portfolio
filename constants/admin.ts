@@ -1,7 +1,12 @@
 const adminDetail = [
   {
     title: '실시간 모바일 레이아웃 프리뷰 도입을 통한 공지사항 작성 UX 개선',
-    images: [],
+    images: [
+      {
+        src: '/admin/notice-preview.gif',
+        caption: '[실시간 모바일 레이아웃 프리뷰]',
+      },
+    ],
     problem:
       '웹에서 앱 공지사항을 작성할 때, 레이아웃 차이로 인해 실제 앱에서의 표시 상태를 반복적으로 확인하고 수정해야 하는 번거로움이 발생함',
     cause: [
