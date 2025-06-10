@@ -1,4 +1,5 @@
 import AnimatedSection from '@/components/AnimatedSection';
+import ContactCard from '@/components/ContactCard';
 import ProjectDetailHeader from '@/components/ProjectDetailHeader';
 import ProjectDetailList from '@/components/ProjectDetailList';
 import ProjectDetailToc from '@/components/ProjectDetailToc';
@@ -27,6 +28,9 @@ export default function SponjyWebView() {
           </AnimatedSection>
           <AnimatedSection as="section" delay={0.4} className="mb-8 rounded-lg">
             <ProjectDetailList details={webviewDetail} />
+          </AnimatedSection>
+          <AnimatedSection as="section" delay={0.6} className="mb-8 rounded-lg">
+            <ContactCard />
           </AnimatedSection>
         </div>
         <AnimatedSection as="aside" delay={0.3} className="hidden w-64 flex-shrink-0 md:block">
