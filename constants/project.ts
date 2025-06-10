@@ -26,7 +26,7 @@ export const projects = {
   webview: {
     Icon: YoutubeIcon,
     title: '모바일 웹뷰',
-    description: 'three.js 기반의 360도 영상 플레이어 개발',
+    description: 'Three.js를 활용한 3D 인터랙션을 지원하는 웹뷰 개발',
     techStack: ['TypeScript', 'Next.js', 'Three.js'],
     link: '/experience/sponjy-webview',
     date: '2025.05 ~ 진행 중',
