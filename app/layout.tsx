@@ -15,8 +15,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: '강병준',
-  description: '안녕하세요, 프론트엔드 개발자 강병준입니다.',
+  title: '강병준 포트폴리오',
+  description: '프론트엔드 개발자 강병준의 포트폴리오 사이트입니다.',
+  openGraph: {
+    locale: 'ko_KR',
+    title: '강병준 포트폴리오',
+    description: '프론트엔드 개발자 강병준의 포트폴리오 사이트입니다. 오늘도 행복한 하루 되세요',
+    url: process.env.NEXT_PUBLIC_SITE_URL,
+    siteName: '강병준 포트폴리오',
+    images: [
+      {
+        url: '/profile.jpeg',
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_SITE_URL}`),
 };
 
 export default function RootLayout({
