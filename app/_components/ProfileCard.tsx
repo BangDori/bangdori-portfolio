@@ -14,8 +14,8 @@ const profileLinks = [
   {
     icon: Globe,
     label: '개인 블로그',
-    href: 'https://bangdori.kr',
-    text: 'https://bangdori.kr',
+    href: 'https://www.bangdori.kr',
+    text: 'bangdori.kr',
   },
   {
     icon: Github,
