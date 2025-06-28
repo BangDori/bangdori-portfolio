@@ -5,7 +5,7 @@ const techStack = [
   'TypeScript',
   'React',
   'React Native',
-  'Next.js 15',
+  'Next.js',
   'Tanstack Query',
   'Zustand',
   'Sass',
