@@ -34,7 +34,7 @@ const webviewDetail = [
     references: [
       {
         label: '웹뷰 메시지 수신 구조를 옵저버 패턴으로 리팩토링하기',
-        href: 'https://bangdori.kr/posts/webview-message-observer-refactor',
+        href: 'https://www.bangdori.kr/blog/webview-message-observer-refactor',
       },
     ],
   },
