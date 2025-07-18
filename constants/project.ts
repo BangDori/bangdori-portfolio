@@ -9,7 +9,7 @@ export const projects = {
       '축구 · 풋살 소셜 매칭 플랫폼의 모바일 앱 개발 및 인증, 결제, 딥링크 등 핵심 기능 구현',
     techStack: ['TypeScript', 'React Native', 'Zustand', 'Tanstack Query', 'Jest'],
     link: '/experience/sponjy-app',
-    date: '2024.06 ~ 진행 중',
+    date: '2024.06 ~ 2025.07',
     links: [
       {
         icon: FaApple,
@@ -29,7 +29,7 @@ export const projects = {
     description: 'Three.js를 활용한 3D 인터랙션을 지원하는 웹뷰 개발',
     techStack: ['TypeScript', 'Next.js', 'Three.js'],
     link: '/experience/sponjy-webview',
-    date: '2025.05 ~ 진행 중',
+    date: '2025.05 ~ 2025.07',
   },
   admin: {
     Icon: ShieldUser,
